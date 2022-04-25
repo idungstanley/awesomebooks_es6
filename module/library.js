@@ -10,13 +10,18 @@ class UI {
   }
   static deleteBook = (event) => {
     const books = Book.getStorage()
+    let found = null;
     books.forEach((book) => {
       if (event.target.id === book.id) {
         event.target.parentElement.remove()
-        books.splice(books.indexOf(book), 1)
+        found = book
       }
     })
-    localStorage.setItem('books', JSON.stringify(array))
+    if(found != null){
+
+      books.splice(books.indexOf(found), 1)
+      localStorage.setItem('books', JSON.stringify(books))
+    }
   }
 
   static clearField = () => {

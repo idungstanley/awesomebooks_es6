@@ -21,7 +21,7 @@ class Book {
     bookList.innerHTML = `<p class="title">"${book.title}" by ${book.author}</p>
     <button id=${book.id} class="delete">Remove</button>`
     bookContainer.appendChild(bookList);
-    const deleteBtn = document.querySelector(`#${book.id}`);
+    const deleteBtn = bookList.querySelector("button");
     deleteBtn.onclick = UI.deleteBook;
 
   }
