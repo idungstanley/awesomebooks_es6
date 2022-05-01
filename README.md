@@ -9,6 +9,8 @@
 > I created the desktop version using media queries.
 > Book auto updates in the local storage.
 
+![screenshot](./Images/screenshot.png)
+
 Additional description about the project and its features.
 
 ## Built With
@@ -37,6 +39,10 @@ To get a local copy up and running follow these simple example steps.
   * Run ```code .``` to open your VScode Editor
 * Create the Github\workflows Folder
   * Create a Linters.yml file and configure
+
+## Live Demo
+
+[Site is live. Visit now!](https://idungstanley.github.io/awesomebooks_es6/)
 
 ### Install
 
